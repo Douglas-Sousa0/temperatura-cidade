@@ -19,7 +19,7 @@ function App(){
       console.log('Ignorando o erro que ocorre ao renderizar a página pois o e.preventDefault() funciona apenas quando a função é chamada através do submit do formulário e não devido ao useEffect')
     }
 
-    const key = '' // key da API
+    const key = process.env.REACT_APP_KEY // key da API
   
     let url = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${cidade}&aqi=no`
 
