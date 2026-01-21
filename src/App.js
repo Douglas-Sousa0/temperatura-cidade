@@ -20,8 +20,9 @@ function App(){
     }
 
     const key = process.env.REACT_APP_KEY // key da API
+    const protocolo = process.env.REACT_APP_PROTOCOLO // HTTP ou HTTPS
   
-    let url = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${cidade}&aqi=no`
+    let url = `${protocolo}://api.weatherapi.com/v1/current.json?key=${key}&q=${cidade}&aqi=no`
 
     fetch(url)
     .then(r => r.json())
