@@ -42,9 +42,9 @@ function App(){
     })
   }
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     api_weather()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
 
   return(
