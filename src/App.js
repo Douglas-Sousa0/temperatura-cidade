@@ -42,6 +42,7 @@ function App(){
     })
   }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     api_weather()
   },[])
@@ -88,8 +89,7 @@ function App(){
 
         
         <span>Dados obtidos em: {dadosCidade.horario_dados} (horário local)</span>
-
-        <span>Desenvolvido por <a href='https://github.com/Douglas-Sousa0' target='_blank'>Douglas</a> utilizando <a href="https://www.weatherapi.com/" title="Free Weather API" target='_blank'>WeatherAPI.com</a></span>
+        <span>Desenvolvido por <a href='https://github.com/Douglas-Sousa0' target='_blank' rel='noreferrer'>Douglas</a> utilizando <a href="https://www.weatherapi.com/" title="Free Weather API" target='_blank' rel='noreferrer'>WeatherAPI.com</a></span>
       </div>
     </div>
 
