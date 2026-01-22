@@ -29,8 +29,10 @@ Após isso basta realizar o download dos arquivos desse repositório e em seguid
 
 ## API
 
-Para ter acesso à sua key da API é necessário se cadastrar em [Weather API](https://www.weatherapi.com/)
+Para ter acesso à sua **key** da API é necessário se cadastrar em [Weather API](https://www.weatherapi.com/)
 
 ### ⚠️ Observação
 
-Para que a API funcione é necessário criar um arquivo `.env` na pasta do projeto na qual deverá conter o valor da key e a string do protocolo HTTP ou HTTPS (o valor nesse caso para rodar localmente deverá ser http pois irá rodar local)
+Para que a API funcione é necessário criar um arquivo `.env` na pasta do projeto na qual deverá conter o valor da **key** e a string do protocolo HTTP/HTTPS
+
+O valor nesse caso deverá ser **'http'** pois localmente o projeto roda em **http** (http://localhost:3000/), rodar em **https** poderá ocasionar erro ao chamar a API
