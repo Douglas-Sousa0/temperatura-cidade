@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './style.css'
+import Bloco from './components/Bloco'
 
 function App(){
   const [cidade, setCidade] = useState('São Paulo')
@@ -67,27 +68,11 @@ function App(){
         <h1>{dadosCidade.nome}</h1>
 
         <div className='blocos'>
-          <div className='bloco_dado'>
-            <span className='topico_bloco'>Temperatura</span>
-            <span className='valor_topico'>{dadosCidade.temperatura}</span>
-          </div>
-
-          <div className='bloco_dado'>
-            <span className='topico_bloco'>Sensação Térmica</span>
-            <span className='valor_topico'>{dadosCidade.sensacao_termica}</span>
-          </div>
-
-          <div className='bloco_dado'>
-            <span className='topico_bloco'>Vento</span>
-            <span className='valor_topico'>{dadosCidade.vento}</span>
-          </div>
-
-          <div className='bloco_dado'>
-            <span className='topico_bloco'>Umidade</span>
-            <span className='valor_topico'>{dadosCidade.umidade}</span>
-          </div>
+          <Bloco topico='Temperatura' valor={dadosCidade.temperatura}/>
+          <Bloco topico='Sensação Térmica' valor={dadosCidade.sensacao_termica}/>
+          <Bloco topico='Vento' valor={dadosCidade.vento}/>
+          <Bloco topico='Umidade' valor={dadosCidade.umidade}/>
         </div>
-
         
         <span>Dados obtidos em: {dadosCidade.horario_dados} (horário local)</span>
         <span>Desenvolvido por <a href='https://github.com/Douglas-Sousa0' target='_blank' rel='noreferrer'>Douglas</a> utilizando <a href="https://www.weatherapi.com/" title="Free Weather API" target='_blank' rel='noreferrer'>WeatherAPI.com</a></span>
